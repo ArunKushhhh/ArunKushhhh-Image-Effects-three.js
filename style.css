@@ -1,0 +1,297 @@
+@font-face {
+    font-family: NimbusSans-rg;
+    src: url(Utils/Fonts/NimbusSanL-Reg.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: NimbusSans-rg;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    width: 100%;
+}
+
+.home{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.nav{
+    padding: 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav-tabs{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-tabs li{
+    list-style-type: none;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+.nav-tabs li a, .logo a, .journey a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    padding-top: 17rem;
+    padding-bottom: 8rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.left h4{
+    font-weight: 400;
+}
+
+.left h3{
+    font-size: normal;
+    font-weight: 400;
+}
+
+.left p{
+    margin: 0.5rem 0;
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+.left img{
+    width: 60%;
+    object-fit: cover;
+}
+
+.center{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.center h1{
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 100;
+    top: -22%;
+    left: -8%;
+    line-height: 100%;
+}
+
+.center .secH1{
+    top: -11%;
+}
+
+.center img{
+    width: 480px;
+}
+
+.center p{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.right{
+    margin-top: 14rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.right h3{
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+.right img{
+    height: 50px;
+}
+
+.motive{
+    min-height: 60vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10rem;
+}
+
+.motive-heading p{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+    opacity: 0.5;
+}
+
+.motive-content{
+    padding-left: 10rem;
+    width: 100%;
+    text-align: right;
+    font-size: 27px;
+    line-height: 2;
+    font-weight: 550;
+}
+
+.motive-content p span{
+    display: inline-block;
+    height: 3rem;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-bottom: -12px;
+}
+
+.motive-content span img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page3{
+    min-height: 100vh;
+    padding: 5% 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.page3-left{
+    width: 25%;
+}
+
+.page3-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.page3-left img{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.page3-right img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+.page3-left h3, .page3-right h3{
+    font-size: 1.75rem;
+    margin: 0.75rem 0;
+    font-weight: 100;
+}
+.page3-left p, .page3-right p{
+    font-size: 1rem;
+    max-width: 300px;
+}
+
+.biodegrade{
+    height: 100vh;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.biodegrade img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+.biodegrade h3{
+    font-size: 2.25rem;
+    font-weight: 100;
+    letter-spacing: 30%;
+}
+
+.biodegrade p{
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    max-width: 300px;
+}
+
+.video-div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.video-div video{
+    display: none;
+    width: 100%;
+}
+.video-div video.active{
+    transition: 0.4s ease-in;
+    display: flex;
+}
+
+.video-div .video-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(255,255,255,0.6);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+.video-content h3{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.video-content button{
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-weight: 100;
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(to right, #e5e5e5, #9b9b9b);
+}

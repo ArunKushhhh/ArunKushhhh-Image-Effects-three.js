@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Effects | Threejs</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <!-- home -->
+      <div class="home">
+        <!-- nav bar -->
+        <header>
+          <div class="nav">
+            <ul class="nav-tabs">
+              <li><a class="nlink" href="">Home</a></li>
+              <li><a class="nlink" href="">Pricing</a></li>
+              <li><a class="nlink" href="">Products</a></li>
+            </ul>
+            <div class="logo"><a class="nlink" href="">Logo</a></div>
+            <div class="journey"><a class="nlink" href="">Our Journey</a></div>
+          </div>
+        </header>
 
+        <!-- hero section -->
+        <div class="hero">
+          <div class="left anim2">
+            <h4>01.</h4>
+            <h3>Sustainability</h3>
+            <p>
+              Committed to sustainability, eco-friendly <br />
+              choices for a better tomorrow.
+            </p>
+            <img class="pinkPlant" src="Assets/pinkgreenplant.jpg" alt="" />
+          </div>
+          <div class="center anim2">
+            <h1>Ephimeral</h1>
+            <h1 class="secH1">Equilibrium.</h1>
+            <img src="Assets/pinkplant.jpg" alt="" />
+            <p>
+              Committed to <br />sustainability, eco- <br />friendly choices for
+              a <br />
+              better tomorrow.
+            </p>
+          </div>
+          <div class="right anim2">
+            <img src="Assets/gallery.svg" alt="" />
+            <h3>visit our gallery.</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- motive -->
+      <div class="motive">
+        <div class="motive-heading">
+          <p>Our Motive</p>
+        </div>
+        <div class="motive-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vero
+            esse sint distinctio provident dolore soluta autem
+            <span><img src="Assets/bluegirl.jpg" alt="" /></span> doloribus
+            doloremque quas nihil ratione, nostrum cumque quos fuga magnam
+            perspiciatis
+            <span><img src="Assets/shaljam.jpg" alt="" /></span> inventore.
+            Incidunt fugiat, uasi tempore? Laboriosam
+            <span><img src="Assets/grass.jpg" alt="" /></span> quas repellat
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Synergy and harmony -->
+      <div class="page3">
+        <div class="page3-left">
+          <img src="Assets/sea.jpg" alt="" />
+          <h3>Synergy.</h3>
+          <p>
+            Committed to sustainability, eco-friendly choices for a better
+            tomorrow.
+          </p>
+        </div>
+        <div class="page3-right">
+          <img src="Assets/cloud.jpg" alt="" />
+          <h3>Harmony.</h3>
+          <p>
+            Committed to sustainability, eco-friendly choices for a better
+            tomorrow.
+          </p>
+        </div>
+      </div>
+
+      <!-- Biodegradable Packing -->
+      <div class="biodegrade">
+        <img src="Assets/bottle.jpg" alt="" />
+        <div class="bio-content">
+          <h3>
+            Biodegradable <br />
+            Products
+          </h3>
+          <p>
+            Committed to sustainability, eco- <br />friendly choices for a
+            better tomorrow.
+          </p>
+        </div>
+      </div>
+
+      <!-- video-div -->
+      <div class="video-div">
+        <video muted autoplay loop src="Assets/back.mp4"></video>
+        <div class="video-content">
+          <h3>think of future.</h3>
+          <button>join the movement</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
